@@ -52,6 +52,11 @@ input{
     border-right: none;
     border-bottom: none;
 }
+
+input:focus {
+    outline: 0;
+}
+
 .underline{
     border-bottom: 2px solid grey;
     width: 100%;
