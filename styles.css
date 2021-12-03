@@ -1,7 +1,16 @@
+/*
+??add media query to make mobile responsive-change forgot to stay
+    XXborder off of sign in button
+    XXpadding under email and password to sit closer to line
+??orignal background is white & the blue background is a box 
+*/
+
 body{
-    background-color: #EAF4F9;
+    background-color: #DCEAF0;
 }
+
 h1{
+    color: black;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -9,32 +18,35 @@ h1{
 }
 
 h4{
+    color: #7A7376;
     font-style: italic;
     margin: 5px 0px 20px 0px;
 }
 
 form{
+    /*move this to the center of the blue box*/
     background-color: white;
     position: absolute;
     padding: 50px;
     display:flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid #DCEAF0;
-    box-shadow: 20px 10px 50px 5px #DCEAF0;
+    box-shadow: -5px 20px 60px 5px #C8C4C2;
     box-sizing: border-box;
 }
 
 button{
-    padding: 20px 100px;
-    margin: 50px 20px 10px 20px;
+    width: 300px;
+    height: 60px;
     background-color: #3598Db;
     color: white;
     font-size: large;
     font-weight: bold;
+    border: 0;
+    margin: 40px 0px 10px;
 }
-a:link{
-    color: grey;
+a{
+    color: #7A7376;
     text-decoration: none;
     font-size: large;   
 }
@@ -43,10 +55,11 @@ a:hover{
     color:#93ACD2;
 }
 input{
+    color: #7A7376;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
-    padding: 10px;
-    margin: 10px;
+    padding: 0px;
+    margin: 0px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -58,8 +71,14 @@ input:focus {
 }
 
 .underline{
+    margin: 20px;
     border-bottom: 2px solid grey;
     width: 100%;
+}
+
+#align{
+    position: absolute;
+    right: 50px;
 }
 
 .center{
@@ -69,3 +88,30 @@ input:focus {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*@media screen and (max-width: 814px) {
+    button{
+    
+    }   
+} */
+
+/*.whitebox{
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    position: fixed;
+}*/
+
+/*adjust blue box to be fixed in the center & have curved corners to be smaller?*/
+
+/*.bluebox{
+    background-color: #DCEAF0;
+    border: solid 2px black;
+    min-height: 90vh;
+    min-width: 90vw;
+    position: fixed;
+    top:10;
+    bottom: 10;
+    left: 10;
+    right: 10;
+}*/
